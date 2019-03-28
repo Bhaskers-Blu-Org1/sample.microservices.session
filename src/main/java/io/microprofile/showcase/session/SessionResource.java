@@ -181,7 +181,7 @@ public class SessionResource {
     @Path("/updateHealthStatus")
     @Produces(TEXT_PLAIN)
     @Consumes(TEXT_PLAIN)
-    @Counted(name="io.microprofile.showcase.session.SessionResource.updateHealthStatus.monotonic.absolute(true)",monotonic=true,absolute=true,tags="app=vote")
+    @Counted(name="io.microprofile.showcase.session.SessionResource.updateHealthStatus.monotonic.absolute",monotonic=true,absolute=true,tags="app=vote")
     public void updateHealthStatus(@QueryParam("isAppDown") Boolean isAppDown) {
     	healthCheckBean.setIsAppDown(isAppDown);
     }
